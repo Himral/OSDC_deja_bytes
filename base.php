@@ -74,11 +74,10 @@ die(mysqli_error($con));
 }*/
 
 $NGO = "CREATE TABLE NGO
-(Registration_no INT ,
+(Registration_no VARCHAR(50) ,
 NGO_name VARCHAR(50) NOT NULL,
 President VARCHAR(50),
-Contact VARCHAR(10) NOT NULL,
-Email VARCHAR(50) NOT NULL,
+Contact VARCHAR(20) NOT NULL,
 Locality VARCHAR (50),
 Pincode VARCHAR (10) NOT NULL,
 PRIMARY KEY (Registration_no))";
