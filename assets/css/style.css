@@ -815,8 +815,9 @@ section {
 --------------------------------------------------------------*/
 .trainers .member {
   text-align: center;
-  margin-bottom: 20px;
-  background: #fff;
+  margin-bottom: 80px;
+  background: #F9F8EB;
+  border-radius: 70px;
   border: 1px solid #eef0ef;
 }
 
@@ -920,8 +921,8 @@ section {
 
 button {
   --c:  #9384D1; /* the color*/
-  
-  box-shadow: 0 0 0 .1em inset var(--c); 
+
+  box-shadow: 0 0 0 .1em inset var(--c);
   --_g: linear-gradient(var(--c) 0 0) no-repeat;
   background:
     var(--_g) calc(var(--_p,0%) - 100%) 0%,
