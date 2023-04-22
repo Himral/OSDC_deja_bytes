@@ -1348,7 +1348,7 @@ button {
 /*--------------------------------------------------------------
 # Volunteers
 --------------------------------------------------------------*/
-.container
+.bag
 {
   position: relative;
   display: flex;
@@ -1358,7 +1358,7 @@ button {
   gap: 60px;
 }
 
-.container .box
+.bag .box
 {
   position: relative;
   width: 300px;
@@ -1369,7 +1369,7 @@ button {
   align-items: center;
 }
 
-.container .box::before
+.bag .box::before
 {
   content: '';
   position: absolute;
@@ -1382,13 +1382,13 @@ button {
 
 }
 
-.container .box:hover::before
+.bag .box:hover::before
 {
   transform: skewY(0 deg);
   inset: -10px 40px;
 }
 
-.container .box::after
+.bag .box::after
 {
   content: '';
   position: absolute;
@@ -1400,12 +1400,12 @@ button {
 
 }
 
-.container .box:hover::after
+.bag .box:hover::after
 {
   inset: 40px -10px;
 }
 
-.container .box .content
+.bag .box .content
 {
   position: relative;
   display: flex;
@@ -1422,7 +1422,7 @@ button {
   overflow: hidden;
 }
 
-.container .box .content .icon
+.bag .box .content .icon
 {
   color: var(--clr);
   width: 80px;
@@ -1437,7 +1437,7 @@ button {
   transition: 0.5s ease-in-out;
 }
 
-.container .box:hover .content .icon
+.bag .box:hover .content .icon
 {
     background: var(--clr);
     color: #2e2e2e;
@@ -1445,7 +1445,7 @@ button {
     0 0 0 300px var(--clr);
 }
 
-.container .box .content .text h3{
+.bag .box .content .text h3{
     font-size: 1.5em;
     z-index: 2;
     color: #fff;
@@ -1453,21 +1453,21 @@ button {
     transition: 0.5s ease-in-out;
 }
 
-.container .box:hover .content .text h3
+.bag .box:hover .content .text h3
 {
     color: #2e2e2e;
 }
-.container .box .content .text p
+.bag .box .content .text p
 {
     color: #777;
     transition: 0.5s ease-in-out;
 }
-.container .box:hover .content .text p
+.bag .box:hover .content .text p
 {
     color: #2e2e2e;
 }
 
-.container .box .content .text a
+.bag .box .content .text a
 {
     position: relative;
     background: var(--clr);
@@ -1479,7 +1479,7 @@ button {
     margin-top: 10px;
     transition: 0.5s ease-in-out;
 }
-.container .box:hover .content .text a
+.bag .box:hover .content .text a
 {
     background: #2e2e2e;
     color: var(--clr);
