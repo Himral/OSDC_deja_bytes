@@ -11,7 +11,7 @@
   .byline {
     animation: move-byline 10s linear infinite;
   }
-  
+
   /* Keyframes */
   @keyframes star {
     0% {
@@ -30,7 +30,7 @@
       transform: translateZ(-1000em);
     }
   }
-  
+
   @keyframes wars {
     0% {
       opacity: 0;
@@ -48,7 +48,7 @@
       transform: translateZ(-1000em);
     }
   }
-  
+
   @keyframes spin-letters {
     0%, 10% {
       opacity: 0;
@@ -65,7 +65,7 @@
       opacity: 0;
     }
   }
-  
+
   @keyframes move-byline {
     0% {
       transform: translateZ(5em);
@@ -74,23 +74,23 @@
       transform: translateZ(0);
     }
   }
-  
+
   /* Make the 3D work on the container */
   .starwars-demo {
     perspective: 800px;
     transform-style: preserve3d;
   }
-  
+
   /* General styles and layout */
   body {
-    background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+    background: #000 url(https://cssanimation.rocks/demo/starwars/images/bg.jpg);
   }
-  
+
   .flex_container{
     display: flex;
     flex-direction: column;
   }
-  
+
   .button_row{
     width: 90%;
     margin : 50% auto;
@@ -104,27 +104,27 @@
     transform: translate(-50%, -50%);
     width: 34em;
   }
-  
+
   .byline span {
     display: inline-block;
   }
-  
+
   img {
     width: 100%;
   }
-  
+
   .star, .wars, .byline {
     position: absolute;
   }
-  
+
   .star {
     top: -0.75em;
   }
-  
+
   .wars {
     bottom: -0.5em;
   }
-  
+
   .byline {
     color: #fff;
     font-family: "ITC Serif Gothic", Lato;
@@ -136,21 +136,21 @@
     text-transform: uppercase;
     top: 29%;
   }
-  
+
   /*** Media queries for adjusting to different screen sizes ***/
-  
+
   @media only screen and (max-width: 600px) {
     .starwars-demo {
       font-size: 10px;
     }
   }
-  
+
   @media only screen and (max-width: 480px) {
     .starwars-demo {
       font-size: 7px;
     }
   }
-  
+
   button {
     margin: 20px;
   }
@@ -172,9 +172,9 @@
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
   }
-  
+
   .btn-8 {
-    
+
   background-image: linear-gradient(315deg, #f0ecfc 0% );
     line-height: 42px;
     padding: 0;
@@ -192,9 +192,9 @@
     content: "";
     right: 0;
     bottom: 0;
-    
+
     /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
       inset -4px -4px 6px 0 rgba(255,255,255,.5),
       inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
     transition: all 0.3s ease;
@@ -223,9 +223,9 @@
     content: "";
     left: 0;
     top: 0;
-    
+
     /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
       inset -4px -4px 6px 0 rgba(255,255,255,.5),
       inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
     transition: all 0.3s ease;
@@ -244,5 +244,3 @@
   .btn-8 span:hover:after {
     width: 100%;
   }
-    
-  
