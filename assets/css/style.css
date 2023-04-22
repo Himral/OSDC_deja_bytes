@@ -815,9 +815,9 @@ section {
 --------------------------------------------------------------*/
 .trainers .member {
   text-align: center;
-  margin-bottom: 100px;
-  border-radius: 70px;
+  margin-bottom: 80px;
   background: #F9F8EB;
+  border-radius: 70px;
   border: 1px solid #eef0ef;
 }
 
@@ -866,6 +866,92 @@ section {
   margin: 0 2px;
 }
 
+.ed_schemes .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #F9F8EB;
+  border: 1px solid #eef0ef;
+}
+
+.ed_schemes .member img {
+  margin: -1px -1px 30px -1px;
+}
+
+.ed_schemes .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.ed_schemes .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.ed_schemes .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.ed_schemes .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+
+.ed_schemes .member .social {
+  margin-top: 15px;
+}
+
+.ed_schemes .member .social a {
+  color: #7e9486;
+  transition: 0.3s;
+}
+
+.ed_schemes .member .social a:hover {
+  color: #917FB3;
+}
+
+.ed_schemes .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+
+button {
+  --c:  #9384D1; /* the color*/
+
+  box-shadow: 0 0 0 .1em inset var(--c);
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background:
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+button:active {
+  box-shadow: 0 0 9e9q inset #0009;
+  background-color: var(--c);
+  color: #fff;
+}
+
+
+button {
+  font-family: system-ui, sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: .1em .6em;
+  font-weight: bold;
+  border: none;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1272,6 +1358,151 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Volunteers
+--------------------------------------------------------------*/
+.container
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.container .box
+{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #2e2e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .box::before
+{
+  content: '';
+  position: absolute;
+  inset: -10px 50px;
+  border-top: 4px solid var(--clr);
+  border-bottom: 4px solid var(--clr);
+  z-index: -1;
+  transform: skewY(15 deg);
+  transition: 0.5s ease-in-out;
+
+}
+
+.container .box:hover::before
+{
+  transform: skewY(0 deg);
+  inset: -10px 40px;
+}
+
+.container .box::after
+{
+  content: '';
+  position: absolute;
+  inset: 60px -10px;
+  border-left: 4px solid var(--clr);
+  border-right: 4px solid var(--clr);
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+
+}
+
+.container .box:hover::after
+{
+  inset: 40px -10px;
+}
+
+.container .box .content
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  object-fit: cover;
+  pointer-events: none;
+  gap: 20px;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container .box .content .icon
+{
+  color: var(--clr);
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 0 4px #2e2e2e,
+  0 0 0 6px var(--clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  background: #2e2e2e;
+  transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .icon
+{
+    background: var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #2e2e2e,
+    0 0 0 300px var(--clr);
+}
+
+.container .box .content .text h3{
+    font-size: 1.5em;
+    z-index: 2;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+
+.container .box:hover .content .text h3
+{
+    color: #2e2e2e;
+}
+.container .box .content .text p
+{
+    color: #777;
+    transition: 0.5s ease-in-out;
+}
+.container .box:hover .content .text p
+{
+    color: #2e2e2e;
+}
+
+.container .box .content .text a
+{
+    position: relative;
+    background: var(--clr);
+    color: #2e2e2e;
+    padding: 8px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+.container .box:hover .content .text a
+{
+    background: #2e2e2e;
+    color: var(--clr);
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact {
@@ -1581,38 +1812,5 @@ section {
   text-decoration: none;
 }
 
-button {
-  --c:  #229091; /* the color*/
-
-  box-shadow: 0 0 0 .1em inset var(--c);
-  --_g: linear-gradient(var(--c) 0 0) no-repeat;
-  background:
-    var(--_g) calc(var(--_p,0%) - 100%) 0%,
-    var(--_g) calc(200% - var(--_p,0%)) 0%,
-    var(--_g) calc(var(--_p,0%) - 100%) 100%,
-    var(--_g) calc(200% - var(--_p,0%)) 100%;
-  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
-  outline-offset: .1em;
-  transition: background-size .4s, background-position 0s .4s;
-}
-button:hover {
-  --_p: 100%;
-  transition: background-position .4s, background-size 0s;
-}
-button:active {
-  box-shadow: 0 0 9e9q inset #0009;
-  background-color: var(--c);
-  color: #fff;
-}
-
-
-button {
-  font-family: system-ui, sans-serif;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: .1em .6em;
-  font-weight: bold;
-  border: none;
-}
 
 /* CSS FOR THE TIMELINE LAYOUT OF SCHEMES */
