@@ -522,7 +522,7 @@ section {
 }
 
 .breadcrumbs {
-  margin-top: 73px;
+  margin-top: 15px;
   text-align: center;
   background: #917FB3;
   padding: 30px 0;
@@ -1649,6 +1649,12 @@ footer{
   text-align: center;
   font-family: "Poppins", sans-serif;
 
+}
+.notMain{
+  background-color: #917FB3;
+  padding: 10px 0;
+  margin: 0;
+  color: #FDF4F5;
 }
 
 /* CSS FOR THE TIMELINE LAYOUT OF SCHEMES */
