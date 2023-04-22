@@ -403,7 +403,7 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/indian-girl.jpg") top center;
+  background: url("../img/home.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -559,12 +559,12 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  color: #917FB3;
+  color: #fff;
   font-weight: 600;
   font-size: 26px;
 }
 .about .content p{
-  color: #917FB3;
+  color: #fff;
 }
 .about .content ul {
   list-style: none;
@@ -582,10 +582,10 @@ section {
 }
 
 .about .content ul b{
-  color: #F3CCFF;
+  color: #fff;
 }
 .about .content ul{
-  color: #917FB3;
+  color: #fff;
 }
 
 .about .content .learn-more-btn {
