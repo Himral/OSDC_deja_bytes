@@ -145,7 +145,7 @@ h6 {
 }
 
 /**
-* Get Startet Button 
+* Get Startet Button
 */
 .get-started-btn {
   margin-left: 22px;
@@ -175,7 +175,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -288,7 +288,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #37423b;
@@ -403,7 +403,7 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/indian-girl.jpg") top center;
+  background: url("../img/home.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -559,12 +559,12 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  color: #917FB3;
+  color: #fff;
   font-weight: 600;
   font-size: 26px;
 }
 .about .content p{
-  color: #917FB3;
+  color: #fff;
 }
 .about .content ul {
   list-style: none;
@@ -582,10 +582,10 @@ section {
 }
 
 .about .content ul b{
-  color: #F3CCFF;
+  color: #fff;
 }
 .about .content ul{
-  color: #917FB3;
+  color: #fff;
 }
 
 .about .content .learn-more-btn {
@@ -815,8 +815,9 @@ section {
 --------------------------------------------------------------*/
 .trainers .member {
   text-align: center;
-  margin-bottom: 20px;
-  background: #fff;
+  margin-bottom: 100px;
+  border-radius: 70px;
+  background: #F9F8EB;
   border: 1px solid #eef0ef;
 }
 
@@ -1727,10 +1728,10 @@ section {
 
 button {
   --c:  #229091; /* the color*/
-  
-  box-shadow: 0 0 0 .1em inset var(--c); 
+
+  box-shadow: 0 0 0 .1em inset var(--c);
   --_g: linear-gradient(var(--c) 0 0) no-repeat;
-  background: 
+  background:
     var(--_g) calc(var(--_p,0%) - 100%) 0%,
     var(--_g) calc(200% - var(--_p,0%)) 0%,
     var(--_g) calc(var(--_p,0%) - 100%) 100%,
@@ -1744,7 +1745,7 @@ button:hover {
   transition: background-position .4s, background-size 0s;
 }
 button:active {
-  box-shadow: 0 0 9e9q inset #0009; 
+  box-shadow: 0 0 9e9q inset #0009;
   background-color: var(--c);
   color: #fff;
 }
@@ -1755,7 +1756,7 @@ button {
   font-size: 1.5rem;
   cursor: pointer;
   padding: .1em .6em;
-  font-weight: bold;  
+  font-weight: bold;
   border: none;
 }
 
