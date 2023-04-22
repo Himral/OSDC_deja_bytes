@@ -95,8 +95,8 @@ FOREIGN KEY (NGO_no) REFERENCES NGO(Registration_no)";
 /*if(!mysqli_query($con,$fk))
 {
     die(mysqli_error($con));
-}*/
+}
 
-  echo "successful database.";
+  echo "successful database.";*/
 
 ?>
