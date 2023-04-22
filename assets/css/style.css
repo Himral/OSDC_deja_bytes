@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+  background: #000 url(https://cssanimation.rocks/demo/starwars/images/bg.jpg);
 }
 
 a {
@@ -8,10 +8,14 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #86db9f;
+  color: #917FB3;
   text-decoration: none;
 }
 
+.h1, h1{
+  margin-top: 15px;
+  font-size: 30px;
+}
 
 h1,
 h2,
@@ -804,11 +808,13 @@ section {
 .trainers .member {
   text-align: center;
   margin-bottom: 80px;
-  background: #F9F8EB;
+  background-color: #F9F8EB;
   border-radius: 70px;
   border: 1px solid #eef0ef;
 }
-
+.trainers .member:hover {
+background-color: #fffbe4;
+}
 .trainers .member img {
   margin: -1px -1px 30px -1px;
 }
