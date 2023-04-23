@@ -93,7 +93,7 @@
           VALUES ('$rno', '$nname','$pname', '$phone', '$loc','$pin')";
           if(mysqli_query($con,$newngo))
           {
-            die(" insert.".mysqli_error($con));
+            header('Location: final_volunteer.html');
           }
       }
 ?>
