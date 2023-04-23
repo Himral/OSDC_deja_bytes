@@ -66,12 +66,45 @@
         <div class = "input-box">
         <input type = "text" id = "expert" name="expert" placeholder="Specialty " >
 </div>
-        <div class = "input-box">        
-        <input type = "submit" id = "submit" name="submit" value="Register" >
-</div>
+        <<div class="field btn">
+        <div class="btn-layer"></div>
+        <input type="submit" name = "Register" value="Register">
+        </div>
 </form>
 </div>
 </div>
 </div>
+<?php
+
+      $host = "localhost";
+      $user = "root";
+      $pass = "";
+      $db_name = "sehyogi";
+      
+      $con = mysqli_connect($host,$user,$pass,$db_name);
+      
+      if(mysqli_connect_errno())
+      {
+          die("Failed to connect to database".mysqli_connect_error());
+      }
+      if(isset($_POST['Register']))
+      {
+          $fname = $_POST['fname'];
+          $mname = $_POST['mname'];
+          $lname = $_POST['lname'];
+          $mobileno = $_POST['phone'];
+          $email = $_POST['docmail'];
+          $hospital = $_POST['hname'];
+          $loc = $_POST['loc'];
+          $spec = $_POST['expert'];
+
+          $newdoc = "INSERT INTO Doctor (FirstName, MidName, LastName, MobileNo,Email,Hospital,Locality,Expertise) 
+          VALUES ('$fname', '$mname', '$lname', '$mobileno', '$email','$hospital','$loc','$spec')";
+          if(mysqli_query($con,$newdoc))
+          {
+            die(" insert.".mysqli_error($con));
+          }
+      }
+?>
 </body>
 </html>

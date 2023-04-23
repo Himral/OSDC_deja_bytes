@@ -16,22 +16,24 @@
 	<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
 	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 	  <link rel = "stylesheet" href = "assets/css/styles1.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
 </head>
+
 <body>
   <div class = "form-page-container">
-  <div class="container d-flex align-items-center">
+                <div class="container d-flex align-items-center">
 
-    <h1 class="logo me-auto"><a href="index.html">SAHAYOGI</a></h1>
+          <h1 class="logo me-auto"><a href="index.html">SAHAYOGI</a></h1>
 
-    <nav id="navbar" class="navbar order-last order-lg-0">
-      <ul>
-        <li><a class="active" href="index.html">HOME</a></li>
-        <li><a class="active" href="ed_schemes.html">EDUCATION</a></li>
-        <li><a class = "active" href="health_main_eng.html">HEALTHCARE</a></li>
-        <li><a  class="active" href="volunteer.html"><span>GET INVOLVED</span> </a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="active" href="index.html">HOME</a></li>
+              <li><a class="active" href="ed_schemes.html">EDUCATION</a></li>
+              <li><a class = "active" href="health_main_eng.html">HEALTHCARE</a></li>
+              <li><a  class="active" href="volunteer.html"><span>GET INVOLVED</span> </a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
 
   </div>
       
@@ -53,7 +55,42 @@
         <input type = "text" id = "loc" name="loc" value="<?php print $loc; ?>" ><br>
         Pincode :
         <input type = "text" id = "pin" name="pin" value="<?php print $pin; ?>" ><br>
-		<input type="submit" value="Submit">
-	</form>
+        <div class="btn-layer"></div>
+        <input type="submit" name = "Register" value="Register">
+        </div>
+        </form>
+      </div>
+      </div>
+</div>
+<?php
+
+      $host = "localhost";
+      $user = "root";
+      $pass = "";
+      $db_name = "sehyogi";
+      
+      $con = mysqli_connect($host,$user,$pass,$db_name);
+      
+      if(mysqli_connect_errno())
+      {
+          die("Failed to connect to database".mysqli_connect_error());
+      }
+      if(isset($_POST['Register']))
+      {
+          $rno = $_POST['rno'];
+          $pname = $_POST['pname'];
+          $phone = $_POST['phone'];
+          $email = $_POST['ngomail'];
+          $loc = $_POST['loc'];
+          $pin = $_POST['pin'];
+
+          $newngo = "INSERT INTO NGO (Registration_no, NGO_name, President, Contact,Locality,Pincode) 
+          VALUES ('$rno', '$pname', '$phone', '$email', '$loc','$pin')";
+          if(mysqli_query($con,$newngo))
+          {
+            die(" insert.".mysqli_error($con));
+          }
+      }
+?>
 </body>
 </html>
