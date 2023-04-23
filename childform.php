@@ -103,7 +103,7 @@
           VALUES ('$fname', '$mname', '$lname', '$mobileno', '$gender','$add','$loc','$pin')";
           if(mysqli_query($con,$newchild))
           {
-            die(" insert.".mysqli_error($con));
+            header('Location: final_child.html');
           }
       }
 ?>

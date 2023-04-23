@@ -59,7 +59,10 @@ h6 {
   opacity: 1;
 }
 
-
+#img2{
+  border-radius: 30px;
+  margin-right: 50px;
+}
 #preloader {
   position: fixed;
   top: 0;
@@ -298,6 +301,7 @@ h6 {
   position: relative;
 }
 
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.2);
@@ -373,7 +377,91 @@ h6 {
     line-height: 24px;
   }
 }
+/*final section*/
+#final {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+}
 
+
+#final:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#final .container {
+  padding-top: 72px;
+}
+
+@media (max-width: 992px) {
+  #final .container {
+    padding-top: 62px;
+  }
+}
+
+#final h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#final h2 {
+  color: #eee;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+#final .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#final .btn-get-started:hover {
+  background: #917FB3;
+  border: 2px solid #917FB3;
+}
+
+@media (min-width: 1024px) {
+  #final {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #final {
+    height: 100vh;
+  }
+
+  #final h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #final h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+/*end final*/
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
