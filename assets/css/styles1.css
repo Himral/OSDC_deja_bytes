@@ -20,6 +20,11 @@ body
 # Form
 --------------------------------------------------------------*/
 
+.form-page-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
 .box1
 {
     position: relative;
