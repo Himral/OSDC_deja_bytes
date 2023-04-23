@@ -1269,6 +1269,7 @@ button {
   height: 350px;
   background: #2e2e2e;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
