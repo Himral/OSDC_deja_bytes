@@ -108,9 +108,9 @@ VALUES ('166420040', 'CRY - Child Rights', 'Puja Marwaha', '+91-22-61462424', 'M
 /*if(!mysqli_query($con,$fk))
 {
     die(mysqli_error($con));
-}*/
+}
 else
 
   echo "successful database.";
-
+*/
 ?>
