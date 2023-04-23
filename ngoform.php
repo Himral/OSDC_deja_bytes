@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
+
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NGO Registration</title>
-	<link href="assets/img/favicon.png" rel="icon">
-	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-	<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-	<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-	  <link rel = "stylesheet" href = "assets/css/styles1.css">
-    <link rel = "stylesheet" href = "assets/css/style.css">
+    <title>NGO Registration</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel = "stylesheet" href = "assets/css/styles1.css">
+  <link rel = "stylesheet" href = "assets/css/style.css">
 </head>
 
 <body>
@@ -41,20 +43,26 @@
     <div class="bag">
     <div class = "form">
 		<h2>Register your NGO <br></h2>
-	<form name = "NGO" ACTION = "ngoform.php" METHOD = "POST" >
-		
-		Registration Number :   
-		<input type="text" id="rno" name="rno" value="<?php print $rno; ?>" required> <br>
-        President Name :   
-		<input type="text" id="pname" name="pname" value="<?php print $pname; ?>" ><br>
-        Contact Number :
-		<input type="text" id="phone" name="phone" value="<?php print $phone; ?>" required><br>
-        Email :
-        <input type= "email" id="ngomail" name="ngomail" value="<?php print $ngomail; ?>" ><br>
-        Locality :
-        <input type = "text" id = "loc" name="loc" value="<?php print $loc; ?>" ><br>
-        Pincode :
-        <input type = "text" id = "pin" name="pin" value="<?php print $pin; ?>" ><br>
+	<form name = "NGO" action = "ngoform.php" method = "POST" >
+		<div class = "input-box"> 
+		<input type="text" id="rno" name="rno" required placeholder="Registration No.">
+    </div> 
+    <div class = "input-box">
+          
+		<input type="text" id="pname" name="pname" placeholder="President Name">
+        </div>
+        <div class = "input-box">
+		<input type="text" id="phone" name="phone" required placeholder="Contact">
+        </div>
+        <div class = "input-box">
+            <input type="text" id="ngomail" name="ngomail" required placeholder="Email">
+            </div>
+        <div class = "input-box">
+        <input type = "text" id = "loc" name="loc"  placeholder="Locality">
+        </div>
+        <div class = "input-box">
+        <input type = "text" id = "pin" name="pin"  placeholder="Pincode">        </div>
+        <div class="field btn">
         <div class="btn-layer"></div>
         <input type="submit" name = "Register" value="Register">
         </div>
