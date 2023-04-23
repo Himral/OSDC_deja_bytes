@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -43,7 +43,7 @@
     <div class="bag">
     <div class = "form">
 		<h2>Register yourself at an NGO <br>(एनजीओ में रजिस्टर करें)</h2>
-        <form name = "child" ACTION = "childform.php" METHOD = "POST" ></form>
+        <form name = "child" action = "childform.php" method = "POST" >
 		<div class = "input-box"> 
 		<input type="text" id="fname" name="fname" required placeholder="First Name (पहला नाम)">
     </div> 
@@ -67,13 +67,47 @@
         </div>
         <div class = "input-box">
         <input type = "text" id = "pin" name="pin"  placeholder="Pincode (पिन कोड)">        </div>
-        <div class = "input-box">
-            <button type = "submit" id = "submit" name="submit" value="Register (पंजीकरण)" >
-            </div>
-
+        <div class="field btn">
+        <div class="btn-layer"></div>
+        <input type="submit" name = "Register" value="Register">
+        </div>
         </form>
       </div>
       </div>
 </div>
+<?php
+
+      $host = "localhost";
+      $user = "root";
+      $pass = "";
+      $db_name = "sehyogi";
+      
+      $con = mysqli_connect($host,$user,$pass,$db_name);
+      
+      if(mysqli_connect_errno())
+      {
+          die("Failed to connect to database".mysqli_connect_error());
+      }
+      if(isset($_POST['Register']))
+      {
+          $fname = $_POST['fname'];
+          $mname = $_POST['mname'];
+          $lname = $_POST['lname'];
+          $mobileno = $_POST['phone'];
+          $gender = $_POST['gender'];
+          $add = $_POST['address'];
+          $loc = $_POST['loc'];
+          $pin = $_POST['pin'];
+
+          $newchild = "INSERT INTO children (FirstName, MidName, LastName, MobileNo,Gender,_Address,Locality,Pincode) 
+          VALUES ('$fname', '$mname', '$lname', '$mobileno', '$gender','$add','$loc','$pin')";
+          if(mysqli_query($con,$newchild))
+          {
+            die(" insert.".mysqli_error($con));
+          }
+      }
+?>
 </body>
 </html>
+
+

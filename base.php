@@ -6,24 +6,24 @@ $db_name = "sehyogi";
 
 $con = mysqli_connect($host,$user,$pass,$db_name);
 
-if(mysqli_connect_errno())
+/*if(mysqli_connect_errno())
 {
     die("Failed to connect to database".mysqli_connect_error());
-}
+}*/
 
-//DB Create and Connect
-/*$db_create = "CREATE DATABASE sehyogi;";
+/*DB Create and Connect
+$db_create = "CREATE DATABASE sehyogi;";
 $a = mysqli_query($con,$db_create);
 if(!mysqli_query($con,$db_create))
 {
     die("Failed to create database:".mysqli_error($con));
 }*/
 
-// Table creation
+//Table creation
 
 $children = "CREATE TABLE Children
 (Id INT AUTO_INCREMENT,
-NGO_no INT,
+NGO_no VARCHAR(50),
 FirstName VARCHAR(20) NOT NULL,
 MidName VARCHAR(20),
 LastName VARCHAR(20),
@@ -88,7 +88,7 @@ die(mysqli_error($con));
 }*/
 
 $fk = "ALTER TABLE Children
-ADD CONSTRAINT fk_ngo
+ADD CONSTRAINT fk_child
 FOREIGN KEY (NGO_no) REFERENCES NGO(Registration_no)";
 
 /*if(!mysqli_query($con,$fk))

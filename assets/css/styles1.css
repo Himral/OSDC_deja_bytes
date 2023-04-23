@@ -99,7 +99,7 @@ body
     color: #fff;
 }
 
-.form .input-box input[type="submit"]
+.form .input-box button
 {
     background: #fff;
     color: #666;
