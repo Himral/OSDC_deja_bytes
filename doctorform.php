@@ -40,7 +40,7 @@
     <div class="bag">
     <div class = "form">
     <h2>Register yourself as a Doctor <br></h2>
-	<form name = "doctor" ACTION = "doctorform.php" METHOD = "POST" >
+	<form name = "doctor" ACTION = "doctorform.php" METHOD = "POST" autocomplete = "off" >
     <div class = "input-box"> 
 		<input type="text" id="fname" name="fname" required placeholder="First Name">
     </div> 
@@ -66,10 +66,7 @@
         <div class = "input-box">
         <input type = "text" id = "expert" name="expert" placeholder="Specialty " >
 </div>
-        <<div class="field btn">
-        <div class="btn-layer"></div>
-        <input type="submit" name = "Register" value="Register">
-        </div>
+<input type="submit" name = "Register" value="Register">
 </form>
 </div>
 </div>

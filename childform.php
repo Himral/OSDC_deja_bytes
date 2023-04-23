@@ -43,7 +43,7 @@
     <div class="bag">
     <div class = "form">
 		<h2>Register yourself at an NGO <br>(एनजीओ में रजिस्टर करें)</h2>
-        <form name = "child" action = "childform.php" method = "POST" >
+        <form name = "child" action = "childform.php" method = "POST" autocomplete="off" >
 		<div class = "input-box"> 
 		<input type="text" id="fname" name="fname" required placeholder="First Name (पहला नाम)">
     </div> 
@@ -67,10 +67,7 @@
         </div>
         <div class = "input-box">
         <input type = "text" id = "pin" name="pin"  placeholder="Pincode (पिन कोड)">        </div>
-        <div class="field btn">
-        <div class="btn-layer"></div>
         <input type="submit" name = "Register" value="Register">
-        </div>
         </form>
       </div>
       </div>
