@@ -91,6 +91,14 @@ $fk = "ALTER TABLE Children
 ADD CONSTRAINT fk_child
 FOREIGN KEY (NGO_no) REFERENCES NGO(Registration_no)";
 
+$insert = "INSERT INTO NGO (`Registration_no`, `NGO_name`, `President`, `Contact`, `Locality`, `Pincode`) 
+VALUES ('166420040', 'CRY - Child Rights', 'Puja Marwaha', '+91-22-61462424', 'Mumbai', '400018'), ('347200001', 'Bharti Foundation', 'Rakesh Bharti Mittal', '+91-11-46666100', 'New Delhi ', '110017'), ('41471', 'Room to Read', 'Geetha Murali', '+91-11-40585600', 'New Delhi', '110065'), ('6382002', 'Smile Foundation', 'Santanu Mishra', '+91-11-43123700 ', 'New Delhi', '110049'), ('KA7182003-04', 'Akshaya Patra', 'Shridhar Venkat', '+91-80-30143400', 'Bengaluru', '560103'), ('M219870', 'Save the Children', 'Rakesh Chaudhary', '+91-11-41031234', 'New Delhi', '110030'), ('MH20000046108', 'Pratham', 'Madhav Chavan', '+91-22-23801447', 'Mumbai', '400025'), ('U851MH29NPL1959', 'Teach For India', 'Shaheen Mistri', '+91-22-63626230', 'Mumbai', '400011')"
+
+if(!mysqli_query($con,$insert))
+{
+    die(mysqli_error($con));
+}
+
 /*if(!mysqli_query($con,$fk))
 {
     die(mysqli_error($con));

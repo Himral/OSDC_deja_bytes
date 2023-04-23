@@ -47,6 +47,9 @@
 		<div class = "input-box"> 
 		<input type="text" id="rno" name="rno" required placeholder="Registration No.">
     </div> 
+    <div class = "input-box"> 
+		<input type="text" id="nname" name="nname" required placeholder="NGO name">
+    </div> 
     <div class = "input-box">
           
 		<input type="text" id="pname" name="pname" placeholder="President Name">
@@ -54,9 +57,6 @@
         <div class = "input-box">
 		<input type="text" id="phone" name="phone" required placeholder="Contact">
         </div>
-        <div class = "input-box">
-            <input type="text" id="ngomail" name="ngomail" required placeholder="Email">
-            </div>
         <div class = "input-box">
         <input type = "text" id = "loc" name="loc"  placeholder="Locality">
         </div>
@@ -86,14 +86,14 @@
       if(isset($_POST['Register']))
       {
           $rno = $_POST['rno'];
+          $nname = $_POST['nname'];
           $pname = $_POST['pname'];
           $phone = $_POST['phone'];
-          $email = $_POST['ngomail'];
           $loc = $_POST['loc'];
           $pin = $_POST['pin'];
 
           $newngo = "INSERT INTO NGO (Registration_no, NGO_name, President, Contact,Locality,Pincode) 
-          VALUES ('$rno', '$pname', '$phone', '$email', '$loc','$pin')";
+          VALUES ('$rno', '$nname','$pname', '$phone', '$loc','$pin')";
           if(mysqli_query($con,$newngo))
           {
             die(" insert.".mysqli_error($con));
