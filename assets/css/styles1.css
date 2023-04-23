@@ -272,7 +272,10 @@ body
 /*--------------------------------------------------------------
 # Form
 --------------------------------------------------------------*/
-
+.form-page-container{
+  display: flex;
+  flex-direction: column;
+}
 .box
 {
     position: relative;
@@ -445,3 +448,5 @@ body
     margin-bottom: 20px;
     font-weight: 600;
 }
+
+

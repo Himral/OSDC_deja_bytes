@@ -21,61 +21,64 @@
 </head>
 
 <body>
-  <div class="container d-flex align-items-center">
+  <div class = "form-page-container">
+          <div class="container d-flex align-items-center">
 
-    <h1 class="logo me-auto"><a href="index.html">SAHAYOGI</a></h1>
-
-    <nav id="navbar" class="navbar order-last order-lg-0">
-      <ul>
-        <li><a class="active" href="index.html">HOME</a></li>
-        <li><a class="active" href="ed_schemes.html">EDUCATION</a></li>
-        <li><a class = "active" href="health_main_eng.html">HEALTHCARE</a></li>
-        <li><a  class="active" href="volunteer.html"><span>GET INVOLVED</span> </a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
-
+            <h1 class="logo me-auto"><a href="index.html">SAHAYOGI</a></h1>
+        
+            <nav id="navbar" class="navbar order-last order-lg-0">
+              <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a class="active" href="ed_schemes.html">EDUCATION</a></li>
+                <li><a class = "active" href="health_main_eng.html">HEALTHCARE</a></li>
+                <li><a  class="active" href="volunteer.html"><span>GET INVOLVED</span> </a></li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        
+          </div>
+              
+        <div class="box">
+            <div class="square" style="--i:0;"></div>
+            <div class="square" style="--i:1;"></div>
+            <div class="square" style="--i:2;"></div>
+            <div class="square" style="--i:3;"></div>
+            <div class="bag">
+            <div class = "form">
+            <h2>Register yourself at an NGO <br>(एनजीओ में रजिस्टर करें)</h2>
+                <form name = "child" ACTION = "childform.php" METHOD = "POST" ></form>
+            <div class = "input-box"> 
+            <input type="text" id="fname" name="fname" required placeholder="First Name">
+            </div> 
+            <div class = "input-box">
+                  
+            <input type="text" id="mname" name="mname" placeholder="Middle Name">
+                </div>
+                <div class = "input-box">
+            <input type="text" id="lname" name="lname" placeholder="Last Name">   
+                </div>
+                <div class = "input-box">
+            <input type="text" id="phone" name="phone" required placeholder="Mobile Number">
+                </div>
+                <div class = "input-box">
+                    <input type="text" id="gender" name="gender" required placeholder="Gender: M / F / O">
+                    </div>
+                <div class = "input-box">
+                <input type = "text" id = "address" name="address" placeholder="Address ">        </div>
+                <div class = "input-box">
+                <input type = "text" id = "loc" name="loc"  placeholder="Locality">
+                </div>
+                <div class = "input-box">
+                <input type = "text" id = "pin" name="pin"  placeholder="Pincode ">        </div>
+                <div class = "input-box">
+                    <input type = "submit" id = "submit" name="submit" value="Register" >
+                    </div>
+        
+          </form>
+        </div>
+        </div>
+        </div>
   </div>
-      
-<div class="box">
-    <div class="square" style="--i:0;"></div>
-    <div class="square" style="--i:1;"></div>
-    <div class="square" style="--i:2;"></div>
-    <div class="square" style="--i:3;"></div>
-    <div class="bag">
-    <div class = "form">
-		<h2>Register yourself at an NGO <br>(एनजीओ में रजिस्टर करें)</h2>
-        <form name = "child" ACTION = "childform.php" METHOD = "POST" ></form>
-		<div class = "input-box"> 
-		<input type="text" id="fname" name="fname" required placeholder="First Name">
-    </div> 
-    <div class = "input-box">
-          
-		<input type="text" id="mname" name="mname" placeholder="Middle Name">
-        </div>
-        <div class = "input-box">
-		<input type="text" id="lname" name="lname" placeholder="Last Name">   
-        </div>
-        <div class = "input-box">
-		<input type="text" id="phone" name="phone" required placeholder="Mobile Number">
-        </div>
-        <div class = "input-box">
-            <input type="text" id="gender" name="gender" required placeholder="Gender: M / F / O">
-            </div>
-        <div class = "input-box">
-        <input type = "text" id = "address" name="address" placeholder="Address ">        </div>
-        <div class = "input-box">
-        <input type = "text" id = "loc" name="loc"  placeholder="Locality">
-        </div>
-        <div class = "input-box">
-        <input type = "text" id = "pin" name="pin"  placeholder="Pincode ">        </div>
-        <div class = "input-box">
-            <input type = "submit" id = "submit" name="submit" value="Register" >
-            </div>
-
-	</form>
-</div>
-</div>
-</div>
+  
 </body>
 </html>
