@@ -43,7 +43,7 @@
     <div class="bag">
     <div class = "form">
 		<h2>Register your NGO <br></h2>
-	<form name = "NGO" action = "ngoform.php" method = "POST" >
+	<form name = "NGO" action = "ngoform.php" method = "POST" autocomplete="off">
 		<div class = "input-box"> 
 		<input type="text" id="rno" name="rno" required placeholder="Registration No.">
     </div> 
@@ -62,10 +62,7 @@
         </div>
         <div class = "input-box">
         <input type = "text" id = "pin" name="pin"  placeholder="Pincode">        </div>
-        <div class="field btn">
-        <div class="btn-layer"></div>
         <input type="submit" name = "Register" value="Register">
-        </div>
         </form>
       </div>
       </div>

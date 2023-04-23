@@ -43,7 +43,7 @@
     <div class="bag">
     <div class = "form">
         <h2>Register yourself as a Volunteer <br></h2>
-	<form name = "volunteer" ACTION = "volunteerform.php" METHOD = "POST" >
+	<form name = "volunteer" autocomplete="off" ACTION = "volunteerform.php" METHOD = "POST" >
 		<div class = "input-box"> 
             <input type="text" id="fname" name="fname" required placeholder="First Name">
         </div> 
@@ -68,9 +68,8 @@
                     <div class = "input-box">
                     <input type = "text" id = "loc" name="loc"  placeholder="Locality">
                     </div>
-                    <div class = "input-box">
-                        <input type = "submit" id = "submit" name="submit" value="Register" >
-                        </div>
+        <input type="submit" name = "Register" value="Register">
+        
                     </form>
                 </div>
                 </div>
@@ -100,9 +99,9 @@
           $loc = $_POST['loc'];
           $newvol = "INSERT INTO Volunteer (FirstName, MidName, LastName, MobileNo, Email,Gender,_Address,Locality) 
           VALUES ('$fname', '$mname', '$lname', '$mobileno', '$Email', '$gender','$add','$loc')";
-          if(mysqli_query($con,$newvol))
+          if(!mysqli_query($con,$newvol))
           {
-            die(" insert.".mysqli_error($con));
+            die(mysqli_error($con));
           }
       }
 ?>
