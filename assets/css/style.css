@@ -1372,7 +1372,7 @@ button {
     color: #2e2e2e;
 }
 
-.bag .box .content .text a
+.bag .box button
 {
     position: relative;
     background: var(--clr);
@@ -1381,19 +1381,16 @@ button {
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
-    margin-top: 10px;
+    margin: 15px 0;
     transition: 0.5s ease-in-out;
 }
-.bag .box:hover .content .text a
+.bag .box:hover button
 {
     background: #2e2e2e;
     color: var(--clr);
 }
 
-.bag .box button{
-    margin: 10px 5px;
-    padding: 10px 5px;
-}
+
 
 
 
