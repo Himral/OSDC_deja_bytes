@@ -99,9 +99,9 @@
           VALUES ('$fname', '$mname', '$lname', '$mobileno', '$email','$hospital','$loc','$spec')";
           if(mysqli_query($con,$newdoc))
           {
-            die(" insert.".mysqli_error($con));
-          }
+            header('Location: final_volunteer.html');
       }
+    }
 ?>
 </body>
 </html>

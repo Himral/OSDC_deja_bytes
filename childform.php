@@ -43,7 +43,7 @@
     <div class="bag">
     <div class = "form">
 		<h2>Register yourself at an NGO <br>(एनजीओ में रजिस्टर करें)</h2>
-        <form name = "child" action = "childform.php" method = "POST" autocomplete="off" >
+        <form name = "child" action = "childform.php" method = "POST" autocomplete = "off" >
 		<div class = "input-box"> 
 		<input type="text" id="fname" name="fname" required placeholder="First Name (पहला नाम)">
     </div> 

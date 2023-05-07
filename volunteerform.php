@@ -99,9 +99,9 @@
           $loc = $_POST['loc'];
           $newvol = "INSERT INTO Volunteer (FirstName, MidName, LastName, MobileNo, Email,Gender,_Address,Locality) 
           VALUES ('$fname', '$mname', '$lname', '$mobileno', '$Email', '$gender','$add','$loc')";
-          if(!mysqli_query($con,$newvol))
+          if(mysqli_query($con,$newvol))
           {
-            die(mysqli_error($con));
+            header('Location: final_volunteer.html');
           }
       }
 ?>
